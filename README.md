@@ -43,7 +43,8 @@ python unblockme_sample_run.py
 Note: You may edit `unblockme_sample_run.py` to add/remove/change the given sample boards. You will notice in the file that a sample board can be initialized as below:
 
 ```python
-board = make_init_state([["B1", 2, V, (0, 0)],
+board = make_init_state(
+		[["B1", 2, V, (0, 0)],
          ["B2", 2, H, (0, 1)],
          ["B3", 3, V, (1, 2)],
          ["B4", 3, H, (5, 0)],
@@ -59,6 +60,8 @@ As can be seen, there are 7 'blocks' in the above sample board. Each block must 
 * an `int` length (e.g. 3)
 * an orientation (either 'H' for horizontal, or 'V' for vertical), AND
 * a "starting position" -- this is an `(int, int)` tuple denoting the location of the "top-leftmost" part of a block
+
+The final component to initialize a board is the starting position of the target block (the target's starting position is defined the same as for other blocks). In the above, the target's starting position is `(2, 0)`, as specified by the final argument to `make_init_state()`.
 
 Once a block has been specified (as above), the solver can be run on the board by adding the following two lines:
 
