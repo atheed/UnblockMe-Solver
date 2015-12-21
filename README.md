@@ -4,18 +4,23 @@ This is a solver for the classic puzzle game, [Unblock Me](https://play.google.c
 This problem was modeled as a search problem, where the "target block" must reach a "goal state" through a sequence of moves (the path for which is of interest to us). 
 
 ##Statespace
+
 ###States
 A state is simply any configuration of the blocks on the board (see Usage to see what an initial board looks like). Each state is uniquely represented by the position of each block on our 6 x 6 board.
+
 ###Actions
 The actions in the statespace relate to moving any one block on the board a certain number of spaces. The three allowed actions are:
 
 1. Move a vertically-oriented block up or down X number of spaces
 2. Move a horizontally-oriented block left or right X number of spaces
 3. Move the [horizontally-oriented] target block left or right X number of spaces
+
 ###Initial/Starting State
 The initial state of our problem is any configuration of the board, which can be specified in `unblockme_sample_run.py`, as specified below (see Usage).
+
 ###Goal State
 The goal state in this statespace is when the target block has no other blocks obstructing it, and is directly in front of the receptacle/goal (located at position `(2, 4)` on the board. 
+
 ###Heuristic
 The heuristic that was used was the sum of two things:
 
