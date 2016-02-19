@@ -3,6 +3,13 @@ This is a solver for the classic puzzle game, [Unblock Me](https://play.google.c
 
 This problem was modeled as a search problem, where the "target block" must reach a "goal state" through a sequence of moves (the path for which is of interest to us). 
 
+### Built By
+- Myself ([atheed](https://github.com/atheed))
+- [evanklein1](https://github.com/evanklein1)
+
+### Software
+- Python 2.7
+
 ##Statespace
 
 ###States
