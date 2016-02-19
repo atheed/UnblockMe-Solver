@@ -7,8 +7,6 @@ This problem was modeled as a search problem, where the "target block" must reac
 - Myself ([atheed](https://github.com/atheed))
 - [evanklein1](https://github.com/evanklein1)
 
-### Software
-- Python 2.7
 
 ##Statespace
 
